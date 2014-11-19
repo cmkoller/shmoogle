@@ -3,11 +3,13 @@
 <head>
   <meta charset="uft-8">
   <title>Shmoogle</title>
+
+  <link rel="stylesheet" href="app.css" media="screen">
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="#">Search</a></li>
+  <div class="navigation-container">
+    <ul class="nav">
+      <li><a href="#" class="active">Search</a></li>
       <li><a href="#">Images</a></li>
       <li><a href="#">Maps</a></li>
       <li><a href="#">Play</a></li>
@@ -16,22 +18,40 @@
       <li><a href="#">Gmail</a></li>
       <li><a href="#">Drive</a></li>
       <li><a href="#">Calendar</a></li>
+      <li><a href="#">Calendar</a></li>
     </ul>
-  </nav>
+  </div>
 
-  <form action="">
-    <label>Shmoogle</label>
-    <input type="search" name="search">
-    <input type="submit" value="Search">
-  </form>
+  <div class="search-container">
+    <form>
+      <label>Shmoogle</label>
+      <input type="search" name="search">
+      <input type="submit" value="Search">
+    </form>
+  </div>
 
-  <ul>
-    <li><a href="#">Web</a></li>
-    <li><a href="#">Images</a></li>
-    <li><a href="#">Maps</a></li>
-    <li><a href="#">Shopping</a></li>
-    <li><a href="#">Search Tools</a></li>
-  </ul>
+  <div class="filters-container">
+    <ul>
+      <li class="active"><a href="#">Web</a></li>
+      <li><a href="#">Images</a></li>
+      <li><a href="#">Maps</a></li>
+      <li><a href="#">Shopping</a></li>
+      <li><a href="#">Search Tools</a></li>
+    </ul>
+  </div>
+
+  <div class="main-container">
+    <ol class="search-results-list">
+      <li>
+        <div class="search-result">
+          <h3 class="search-result-title"><a href="#">Awesome Fake Search Result</a></h3>
+          <cite class="search-result-source">www.awesomesauce.com</cite>
+          <span>Something that is more awesome than awesome. It is a modifier of your basic awesome into a more awesome version.</span>
+        </div>
+      </li>
+    </ol>
+
+  </div>
 
 </body>
 </html>
